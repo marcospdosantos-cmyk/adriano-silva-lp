@@ -597,18 +597,14 @@ p {
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
-    min-height: auto;
-    padding: 110px 20px 110px;
-    gap: 36px;
+    height: auto;
+    min-height: 100svh;
+    padding: 100px 20px 120px;
+    gap: 32px;
   }
 
   .hero-portrait {
-    order: -1;
-  }
-
-  .hero-portrait .placeholder-portrait {
-    max-width: 100%;
-    aspect-ratio: 4 / 3.2;
+    display: none;
   }
 
   .hero-meta {
@@ -2498,4 +2494,171 @@ body[data-accent="crimson"] {
   --orange: #D43F3F;
   --orange-soft: #ec5c5c;
   --brick: #8a1f1f;
+}
+
+/* ============ MOBILE — 640px ============ */
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+    --section-pad-y: 52px;
+    --section-pad-y-tight: 36px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  /* Header */
+  .header-cta {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 90px 16px 110px;
+    gap: 24px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .hero-title {
+    margin: 16px 0 20px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-meta {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta > div {
+    flex: 1 1 40%;
+  }
+
+  /* Manifesto */
+  .manifesto-photo {
+    min-height: 280px;
+  }
+
+  .manifesto-photo img {
+    min-height: 280px;
+  }
+
+  .manifesto-text .lede {
+    font-size: 16px;
+  }
+
+  /* Solutions */
+  .sol-card {
+    padding: 28px 20px;
+  }
+
+  .sol-card h3 {
+    font-size: 22px;
+  }
+
+  /* Music */
+  .music {
+    min-height: auto;
+    padding: var(--section-pad-y) 16px;
+  }
+
+  .music-lede {
+    font-size: 16px;
+  }
+
+  .music-bullets {
+    margin: 36px 0;
+    gap: 14px;
+  }
+
+  /* Authority stats */
+  .stat {
+    padding: 24px 16px;
+  }
+
+  .stat strong {
+    font-size: 32px;
+  }
+
+  /* About */
+  .about-text p {
+    font-size: 15px;
+  }
+
+  /* Logo marquee */
+  .logo-marquee .marquee-track img {
+    width: 150px;
+    height: 56px;
+    transform: scale(1.3);
+  }
+
+  .logo-marquee .marquee-track span {
+    min-width: 180px;
+    min-height: 72px;
+  }
+
+  /* Hero marquee logos */
+  .hero-marquee .marquee-track img {
+    width: 110px;
+    height: 40px;
+    transform: scale(1.2);
+  }
+
+  .hero-marquee .marquee-track span {
+    width: 110px;
+  }
+
+  /* FAQ */
+  .faq-list details summary {
+    font-size: 16px;
+  }
+
+  /* Final CTA */
+  .final-cta {
+    padding: 72px 16px;
+  }
+
+  .cta-lede {
+    font-size: 16px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cta-contacts {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Problems */
+  .problems-list li {
+    font-size: 15px;
+  }
+
+  /* Health */
+  .health-results li {
+    font-size: 15px;
+  }
 }
