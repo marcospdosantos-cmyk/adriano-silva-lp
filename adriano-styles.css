@@ -2515,8 +2515,12 @@ body[data-accent="crimson"] {
   }
 
   /* Hero */
+  .hero-marquee {
+    display: none;
+  }
+
   .hero {
-    padding: 90px 16px 110px;
+    padding: 90px 16px 64px;
     gap: 24px;
   }
 
