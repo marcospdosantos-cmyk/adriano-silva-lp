@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 773.9 129.46">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="svg2" sodipodi:docname="unimed-logo.svg">
+    <sodipodi:namedview id="namedview4" bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" inkscape:current-layer="g26" inkscape:cx="435.61886" inkscape:cy="188.64722" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="837" inkscape:window-maximized="1" inkscape:window-width="1600" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="0.59467814" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+    <g>
+      <path class="st0" d="M508.17,9.62h-254.61c-10.87,0-19.69,8.8-19.69,19.69v60.87c0,10.87,8.82,19.69,19.69,19.69h274.29V29.3c0-10.88-8.82-19.69-19.69-19.69ZM292.24,63.35c0,9.46-5.84,12.6-14.66,12.6-8.12,0-14.52-3.35-14.52-11.96v-17.8h11.17v17.37c0,2.78.78,4.84,3.49,4.84,2.92,0,3.55-1.99,3.55-4.84v-17.37h10.97v17.16ZM319.85,75.45h-10.53v-12.6c0-1.21,0-2.91-1.85-2.91s-1.92,1.7-1.92,2.91v12.6h-10.53v-21.85h9.97v3.76h.07c1.28-3.05,4.13-4.26,7.11-4.26,5.63,0,7.69,2.92,7.69,7.19v15.17ZM334.03,75.45h-10.53v-21.85h10.53v21.85ZM334.03,51.32h-10.53v-7.26h10.53v7.26ZM376.59,75.45h-10.55v-12.6c0-1.21,0-2.91-1.91-2.91-1.78,0-1.78,1.7-1.78,2.91v12.6h-10.6v-12.6c0-1.21,0-2.91-1.78-2.91-1.93,0-1.93,1.7-1.93,2.91v12.6h-10.54v-21.85h9.96v3.76h.07c1.28-3.05,4.13-4.26,7.48-4.26,2.91,0,5.97,1.13,6.83,3.77h.07c.71-2.56,4.34-3.77,6.98-3.77,7.69,0,7.69,4.98,7.69,9.26v13.09ZM403.64,67.05h-14.6c.22,2.7,2.71,3.35,5.84,3.35,2.85,0,5.48-.5,7.13-1.36v5.63c-2.77.85-6.13,1.28-9.83,1.28-8.83,0-13.52-4.27-13.52-11.82s4.7-11.03,13.52-11.03,11.47,5.27,11.47,12.67v1.28ZM432.35,75.45h-9.82v-3.99h-.07c-1.42,3.28-3.56,4.49-6.97,4.49-7.05,0-9.61-5.48-9.61-11.75,0-5.91,2.7-11.1,9.25-11.1,2.84,0,4.98.99,6.61,3.35h.08v-12.39h10.53v31.39ZM441.1,80.7h-1.75v-41.88h1.75v41.88ZM496.11,75.46h-13.1l-7.84-10.47h5.2l-7.84-10.46-7.9,10.46h5.27l-7.83,10.47h-13.1l7.84-10.47h-10.48l15.74-20.93h20.94l15.73,20.93h-10.47l7.84,10.47Z"/>
+      <polygon class="st0" points="472.55 44.07 464.71 54.54 472.55 54.54 480.38 54.54 472.55 44.07"/>
+      <path class="st0" d="M391.89,58.16c-2.49,0-2.99,2.56-2.85,4.27h5.48c0-1.64-.28-4.27-2.63-4.27Z"/>
+      <path class="st0" d="M419.41,59.65c-2.21,0-2.57,2.28-2.57,4.56s.36,4.69,2.71,4.69c2.2,0,2.55-2.42,2.55-4.48,0-2.49-.36-4.77-2.7-4.77Z"/>
+    </g>
+  </g>
+</svg>

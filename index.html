@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adriano Silva — Palco, conteúdo e música</title>
+  <meta name="description" content="Palestras, treinamentos e experiências corporativas que unem desenvolvimento humano, criatividade e música para transformar equipes, atendimento e lideranças.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@1,900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="adriano-styles.css">
+</head>
+<body data-density="comfortable" data-anim="medium">
+
+  <!-- Film grain overlay -->
+  <svg class="grain-svg" aria-hidden="true">
+    <filter id="film-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.95   0 0 0 0 0.85   0 0 0 0.5 0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#film-grain)"/>
+  </svg>
+
+  <!-- Scroll-driven background warmth wash -->
+  <div class="warmth-wash" aria-hidden="true"></div>
+
+  <!-- Sticky WhatsApp -->
+  <a class="whatsapp-fab" href="https://wa.me/5542999385910" target="_blank" rel="noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.45 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.88-9.88 9.88M20.46 3.49A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.33 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42"/>
+    </svg>
+  </a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark">AS</span>
+      <span class="brand-text">
+        <strong>Adriano Silva</strong>
+        <em>palco · conteúdo · música</em>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#autoridade">Autoridade</a>
+      <a href="#depoimentos">Depoimentos</a>
+    </nav>
+    <a class="header-cta" href="#cta">Solicitar orçamento <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ ACT I — DARKNESS ============ -->
+    <section class="hero" data-act="I" style="font-family: Montserrat">
+      <!-- Spotlight that follows cursor on desktop -->
+      <div class="hero-spot" aria-hidden="true"></div>
+
+      <!-- Hero portrait -->
+      <div class="hero-portrait" aria-hidden="true">
+        <img class="hero-portrait-img" src="assets/adriano-hero-orange.png" alt="Adriano Silva" fetchpriority="high">
+      </div>
+
+      <!-- Hero copy -->
+      <div class="hero-copy">
+        <div class="act-label">
+          <span class="dot"></span>
+          <span>Ato I</span>
+          <span class="bar"></span>
+          <span>silêncio antes do palco</span>
+        </div>
+
+        <h1 class="hero-title" data-headline-target style="font-family: Montserrat, sans-serif; font-size: clamp(36px, 5.5vw, 72px); font-weight: 800">Equipes não mudam
+com mais reunião.
+Mudam com presença,
+conteúdo e música.</h1>
+
+        <p class="hero-sub">
+          Adriano Silva conduz palestras, treinamentos e experiências corporativas
+          que unem desenvolvimento humano e linguagem musical para transformar
+          atendimento, comunicação e liderança.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#cta">
+            <span>Quero uma proposta</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-ghost" href="#solucoes">
+            <span>Conhecer soluções</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <strong>300.000+</strong>
+            <small>pessoas impactadas</small>
+          </div>
+          <div>
+            <strong>25 anos</strong>
+            <small>em capacitação</small>
+          </div>
+          <div>
+            <strong>3 países</strong>
+            <small>Brasil · Argentina · Paraguai</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="cue-text">role</span>
+        <span class="cue-line"></span>
+      </div>
+
+      <!-- Marquee strip -->
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span><img src="assets/logos/sebrae.svg" alt="SEBRAE"></span>
+          <span><img src="assets/logos/senac.svg" alt="SENAC"></span>
+          <span><img src="assets/logos/petrobras.svg" alt="Petrobras"></span>
+          <span><img src="assets/logos/banco-do-brasil.svg" alt="Banco do Brasil"></span>
+          <span><img src="assets/logos/unimed.svg" alt="Unimed"></span>
+          <span><img src="assets/logos/itaipu.svg" alt="Itaipu"></span>
+          <span><img src="assets/logos/copel.svg" alt="COPEL"></span>
+          <span><img src="assets/logos/sanepar.svg" alt="Sanepar"></span>
+          <span><img src="assets/logos/correios.svg" alt="Correios"></span>
+          <span><img src="assets/logos/sadia.svg" alt="Sadia"></span>
+          <span><img src="assets/logos/tigre.svg" alt="Tigre"></span>
+          <span><img src="assets/logos/caminhos-do-parana.svg" alt="Caminhos do Paraná"></span>
+          <!-- duplicate 2 -->
+          <span><img src="assets/logos/sebrae.svg" alt=""></span>
+          <span><img src="assets/logos/senac.svg" alt=""></span>
+          <span><img src="assets/logos/petrobras.svg" alt=""></span>
+          <span><img src="assets/logos/banco-do-brasil.svg" alt=""></span>
+          <span><img src="assets/logos/unimed.svg" alt=""></span>
+          <span><img src="assets/logos/itaipu.svg" alt=""></span>
+          <span><img src="assets/logos/copel.svg" alt=""></span>
+          <span><img src="assets/logos/sanepar.svg" alt=""></span>
+          <span><img src="assets/logos/correios.svg" alt=""></span>
+          <span><img src="assets/logos/sadia.svg" alt=""></span>
+          <span><img src="assets/logos/tigre.svg" alt=""></span>
+          <span><img src="assets/logos/caminhos-do-parana.svg" alt=""></span>
+          <!-- duplicate 3 -->
+          <span><img src="assets/logos/sebrae.svg" alt=""></span>
+          <span><img src="assets/logos/senac.svg" alt=""></span>
+          <span><img src="assets/logos/petrobras.svg" alt=""></span>
+          <span><img src="assets/logos/banco-do-brasil.svg" alt=""></span>
+          <span><img src="assets/logos/unimed.svg" alt=""></span>
+          <span><img src="assets/logos/itaipu.svg" alt=""></span>
+          <span><img src="assets/logos/copel.svg" alt=""></span>
+          <span><img src="assets/logos/sanepar.svg" alt=""></span>
+          <span><img src="assets/logos/correios.svg" alt=""></span>
+          <span><img src="assets/logos/sadia.svg" alt=""></span>
+          <span><img src="assets/logos/tigre.svg" alt=""></span>
+          <span><img src="assets/logos/caminhos-do-parana.svg" alt=""></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACT II — TRANSFORMATION ============ -->
+    <section class="manifesto" id="manifesto" data-act="II">
+      <div class="act-marker">
+        <span>Ato II</span>
+        <span class="bar"></span>
+        <span>a virada</span>
+      </div>
+
+      <div class="manifesto-grid">
+        <div class="manifesto-text reveal">
+          <p class="eyebrow">o manifesto</p>
+          <h2>
+            Não é mais uma palestra.<br>
+            É uma <em>experiência</em> de<br>
+            aprendizagem que <em>permanece.</em>
+          </h2>
+          <p class="lede">
+            Empresas não precisam de outro encontro esquecido na segunda-feira seguinte.
+            Precisam de momentos que conectem pessoas, deem linguagem para temas difíceis e
+            sustentem energia depois que as luzes se apagam.
+          </p>
+        </div>
+
+        <figure class="manifesto-photo reveal">
+          <img src="assets/adriano-stage.jpg" alt="Adriano Silva no palco" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ AUDIENCE ============ -->
+    <section class="audience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">para quem é</p>
+          <h2>Para organizações que querem <em>desenvolver pessoas de verdade.</em></h2>
+        </div>
+        <ul class="audience-grid">
+          <li class="reveal"><span class="aud-num">01</span><span class="aud-text">Empresas e equipes de RH</span></li>
+          <li class="reveal"><span class="aud-num">02</span><span class="aud-text">Eventos corporativos e convenções</span></li>
+          <li class="reveal"><span class="aud-num">03</span><span class="aud-text">SIPATs e semanas internas</span></li>
+          <li class="reveal"><span class="aud-num">04</span><span class="aud-text">Instituições de saúde</span></li>
+          <li class="reveal"><span class="aud-num">05</span><span class="aud-text">Escolas, faculdades e universidades</span></li>
+          <li class="reveal"><span class="aud-num">06</span><span class="aud-text">Equipes comerciais e de atendimento</span></li>
+          <li class="reveal"><span class="aud-num">07</span><span class="aud-text">Lideranças e gestores</span></li>
+          <li class="reveal"><span class="aud-num">08</span><span class="aud-text">Órgãos públicos e associações</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMS ============ -->
+    <section class="problems">
+      <div class="container problems-grid">
+        <div class="reveal">
+          <p class="eyebrow">o que muda</p>
+          <h2>Quando pessoas se desconectam, os <em>resultados</em> também perdem força.</h2>
+          <p class="muted">A maioria das dores corporativas começa antes do processo — começa em como as pessoas se comunicam, se reconhecem e se movem juntas.</p>
+        </div>
+        <ul class="problems-list">
+          <li class="reveal">Equipes desmotivadas ou pouco comprometidas</li>
+          <li class="reveal">Atendimento frio, mecânico ou pouco humanizado</li>
+          <li class="reveal">Falhas de comunicação entre líderes e colaboradores</li>
+          <li class="reveal">Dificuldade de falar em público</li>
+          <li class="reveal">Baixa integração entre equipes</li>
+          <li class="reveal">Vendedores com dificuldade de negociar e superar objeções</li>
+          <li class="reveal">Profissionais sobrecarregados em ambientes de alta pressão</li>
+          <li class="reveal">Eventos sem energia, sem conexão, sem memória</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOLUTIONS ============ -->
+    <section class="solutions" id="solucoes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">soluções</p>
+          <h2>Quatro formatos para entrar na sua organização <em>do jeito certo.</em></h2>
+        </div>
+        <div class="solutions-grid">
+          <article class="sol-card reveal">
+            <div class="sol-num">01</div>
+            <h3>Palestras corporativas</h3>
+            <p>Para SIPATs, convenções, semanas internas, encontros empresariais e momentos de mobilização.</p>
+            <a class="sol-link" href="#cta">Ver temas <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="sol-card reveal">
+            <div class="sol-num">02</div>
+            <h3>Treinamentos in&nbsp;company</h3>
+            <p>Programas estruturados para comunicação, liderança, atendimento, vendas, motivação, oratória e gestão do tempo.</p>
+            <a class="sol-link" href="#cta">Montar sob medida <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="sol-card sol-card--featured reveal">
+            <div class="sol-num">03</div>
+            <span class="sol-flag">destaque</span>
+            <h3>Assessoria em humanização</h3>
+            <p>Projeto voltado a instituições de saúde que desejam construir uma cultura mais empática, segura e acolhedora no atendimento.</p>
+            <a class="sol-link" href="#cta">Conhecer assessoria <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="sol-card reveal">
+            <div class="sol-num">04</div>
+            <h3>Experiências com música</h3>
+            <p>Shows, palestras musicais e encontros que unem arte, reflexão e interação para conexão emocional com o público.</p>
+            <a class="sol-link" href="#cta">Levar música ao evento <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MUSIC DIFFERENTIAL — WARMTH PEAKS ============ -->
+    <section class="music" data-act="III">
+      <!-- Stage background -->
+      <div class="music-bg" aria-hidden="true">
+        <img class="music-bg-img" src="assets/music-bw.jpg" alt="" loading="lazy">
+        <div class="music-overlay"></div>
+        <div class="music-embers" aria-hidden="true">
+          <span style="--x:10%;--d:0s"></span>
+          <span style="--x:22%;--d:1.4s"></span>
+          <span style="--x:35%;--d:.8s"></span>
+          <span style="--x:48%;--d:2.1s"></span>
+          <span style="--x:61%;--d:.4s"></span>
+          <span style="--x:74%;--d:1.7s"></span>
+          <span style="--x:87%;--d:.9s"></span>
+        </div>
+      </div>
+
+      <div class="music-inner">
+        <div class="act-marker light">
+          <span>Ato III</span>
+          <span class="bar"></span>
+          <span>quando a música entra</span>
+        </div>
+        <h2 class="reveal">Quando a música entra, <br>a <em>mensagem permanece.</em></h2>
+        <p class="reveal music-lede">
+          Desde 2010, Adriano integra música às suas apresentações para tornar o aprendizado
+          mais leve, participativo e memorável. A música funciona como ponte entre conteúdo e
+          emoção — o público presta atenção, se envolve, e guarda melhor a mensagem.
+        </p>
+        <ul class="music-bullets">
+          <li class="reveal">+ interatividade</li>
+          <li class="reveal">+ conexão emocional</li>
+          <li class="reveal">+ energia no evento</li>
+          <li class="reveal">+ lembrança da mensagem</li>
+        </ul>
+        <!-- Soundbar visual -->
+        <div class="soundbar" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="sobre">
+      <div class="container about-grid">
+        <figure class="about-photo reveal">
+          <div class="about-photo-frame">
+            <img src="assets/adriano-portrait.jpg" alt="Adriano Silva — retrato" loading="lazy">
+          </div>
+          <figcaption>adriano silva · palestrante, consultor e músico</figcaption>
+        </figure>
+        <div class="about-text reveal">
+          <p class="eyebrow">quem é Adriano</p>
+          <h2>Experiência de palco, gestão e <em>desenvolvimento humano.</em></h2>
+          <p>
+            Administrador, MBA em Administração Estratégica e Gestão da Qualidade. Palestrante,
+            professor, instrutor, consultor e músico. Iniciou sua trajetória como consultor no
+            SEBRAE em 1993 e, desde 1998, atua em capacitação para empresas, instituições e equipes.
+          </p>
+          <p>
+            Foi supervisor de vendas em multinacional, gerente de marketing e professor em cursos
+            de extensão e pós-graduação. Em 2010, integrou música às suas apresentações — uma forma
+            mais envolvente de transmitir conhecimento.
+          </p>
+          <dl class="about-facts">
+            <div><dt>Formação</dt><dd>MBA Adm. Estratégica e Gestão da Qualidade</dd></div>
+            <div><dt>Atuação</dt><dd>Palestrante · consultor · instrutor · músico</dd></div>
+            <div><dt>Trajetória</dt><dd>SEBRAE 1993 · capacitação desde 1998 · música desde 2010</dd></div>
+            <div><dt>Discografia</dt><dd>CD "De Repente 15" · banda Rock Rustiko</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUTHORITY ============ -->
+    <section class="authority" id="autoridade">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">autoridade</p>
+          <h2>Construída em campo, com pessoas e <em>empresas reais.</em></h2>
+        </div>
+
+        <div class="auth-stats">
+          <div class="stat reveal">
+            <strong data-count="300000" data-suffix="+">0</strong>
+            <span>pessoas impactadas</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="25" data-suffix="+">0</strong>
+            <span>anos em capacitação</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="3" data-suffix="">0</strong>
+            <span>países com eventos</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="20" data-suffix="+">0</strong>
+            <span>cidades — projeto Senac/PR</span>
+          </div>
+        </div>
+
+        <div class="logo-marquee reveal" aria-label="Empresas e instituições">
+          <div class="marquee-window">
+            <div class="marquee-track">
+              <span><img src="assets/logos/sebrae.svg" alt="SEBRAE"></span>
+              <span><img src="assets/logos/senac.svg" alt="SENAC"></span>
+              <span><img src="assets/logos/sesc.svg" alt="SESC"></span>
+              <span><img src="assets/logos/senai.svg" alt="SENAI"></span>
+              <span><img src="assets/logos/sesi.svg" alt="SESI"></span>
+              <span><img src="assets/logos/correios.svg" alt="Correios"></span>
+              <span><img src="assets/logos/petrobras.svg" alt="Petrobras"></span>
+              <span><img src="assets/logos/banco-do-brasil.svg" alt="Banco do Brasil"></span>
+              <span><img src="assets/logos/caixa.svg" alt="Caixa"></span>
+              <span><img src="assets/logos/unimed.svg" alt="Unimed"></span>
+              <span><img src="assets/logos/itaipu.svg" alt="Itaipu"></span>
+              <span><img src="assets/logos/copel.svg" alt="COPEL"></span>
+              <!-- duplicate for seamless loop -->
+              <span><img src="assets/logos/sebrae.svg" alt=""></span>
+              <span><img src="assets/logos/senac.svg" alt=""></span>
+              <span><img src="assets/logos/sesc.svg" alt=""></span>
+              <span><img src="assets/logos/senai.svg" alt=""></span>
+              <span><img src="assets/logos/sesi.svg" alt=""></span>
+              <span><img src="assets/logos/correios.svg" alt=""></span>
+              <span><img src="assets/logos/petrobras.svg" alt=""></span>
+              <span><img src="assets/logos/banco-do-brasil.svg" alt=""></span>
+              <span><img src="assets/logos/caixa.svg" alt=""></span>
+              <span><img src="assets/logos/unimed.svg" alt=""></span>
+              <span><img src="assets/logos/itaipu.svg" alt=""></span>
+              <span><img src="assets/logos/copel.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="marquee-window reverse">
+            <div class="marquee-track">
+              <span><img src="assets/logos/sanepar.svg" alt="Sanepar"></span>
+              <span><img src="assets/logos/daf-caminhoes.svg" alt="DAF Caminhões"></span>
+              <span><img src="assets/logos/sadia.svg" alt="Sadia"></span>
+              <span><img src="assets/logos/perdigao.svg" alt="Perdigão"></span>
+              <span><img src="assets/logos/tigre.svg" alt="Tigre"></span>
+              <span><img src="assets/logos/caminhos-do-parana.svg" alt="Caminhos do Paraná"></span>
+              <span><img src="assets/logos/uepg.svg" alt="UEPG"></span>
+              <span><img src="assets/logos/unicentro.svg" alt="Unicentro"></span>
+              <span><img src="assets/logos/univel.svg" alt="Univel"></span>
+              <span><img src="assets/logos/copacol.svg" alt="Copacol"></span>
+              <span><img src="assets/logos/coopavel.svg" alt="Coopavel"></span>
+              <!-- duplicate for seamless loop -->
+              <span><img src="assets/logos/sanepar.svg" alt=""></span>
+              <span><img src="assets/logos/daf-caminhoes.svg" alt=""></span>
+              <span><img src="assets/logos/sadia.svg" alt=""></span>
+              <span><img src="assets/logos/perdigao.svg" alt=""></span>
+              <span><img src="assets/logos/tigre.svg" alt=""></span>
+              <span><img src="assets/logos/caminhos-do-parana.svg" alt=""></span>
+              <span><img src="assets/logos/uepg.svg" alt=""></span>
+              <span><img src="assets/logos/unicentro.svg" alt=""></span>
+              <span><img src="assets/logos/univel.svg" alt=""></span>
+              <span><img src="assets/logos/copacol.svg" alt=""></span>
+              <span><img src="assets/logos/coopavel.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HEALTH HUMANIZATION (contrast) ============ -->
+    <section class="health">
+      <div class="container health-grid">
+        <div class="reveal">
+          <p class="eyebrow">assessoria · saúde</p>
+          <h2>Humanizar o atendimento e <em>melhorar a experiência</em> de quem cuida e de quem é cuidado.</h2>
+          <p class="muted">
+            A qualidade do atendimento em saúde não depende apenas de estrutura, tecnologia ou processos.
+            Depende, sobretudo, da forma como profissionais, pacientes e familiares se relacionam.
+          </p>
+          <a class="btn btn-dark" href="#cta">Conhecer a assessoria <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="health-results">
+          <li class="reveal">Melhorar a qualidade do atendimento</li>
+          <li class="reveal">Aumentar a satisfação de pacientes e equipes</li>
+          <li class="reveal">Desenvolver lideranças mais humanas</li>
+          <li class="reveal">Reduzir comportamentos frios e automáticos</li>
+          <li class="reveal">Fortalecer comunicação, empatia e confiança</li>
+          <li class="reveal">Criar ações práticas de humanização</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">depoimentos</p>
+          <h2>Quem viveu a experiência, <em>recomenda.</em></h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="reveal">
+            <div class="quote-mark">"</div>
+            <p>Expectativas superadas. Temas pertinentes, abordados de forma criativa e dinâmica. Foi um sucesso.</p>
+            <cite>
+              <strong>Everton Jr Batista</strong>
+              <span>Caminhos do Paraná</span>
+            </cite>
+          </blockquote>
+          <blockquote class="reveal feature">
+            <div class="quote-mark">"</div>
+            <p>Os melhores treinamentos que já participei. Muito dinamismo e conhecimento espetacular em gestão.</p>
+            <cite>
+              <strong>Luiz Gustavo Barreto</strong>
+              <span>Gestor corporativo</span>
+            </cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <div class="quote-mark">"</div>
+            <p>Se você quer contratar uma palestra, show, treinamento ou consultoria, Adriano Silva é o cara certo.</p>
+            <cite>
+              <strong>Marcos Vinicius Horst Rinaldi</strong>
+              <span>Parceiro de 10 anos</span>
+            </cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <div class="quote-mark">"</div>
+            <p>Competente, responsável e sempre pronto a atender as necessidades dos clientes.</p>
+            <cite>
+              <strong>Silvia Gibala</strong>
+              <span>Cliente corporativa</span>
+            </cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY — FILM STRIP ============ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">momentos</p>
+          <h2>Nos <em>palcos e salas</em> onde as equipes mudam.</h2>
+        </div>
+      </div>
+      <div class="film-strip">
+        <div class="film-track">
+          <figure class="film-frame">
+            <img src="assets/stage-band.jpg" alt="Adriano Silva no palco" loading="lazy">
+            <figcaption>01 · palco · banda</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/audience-cinema.jpg" alt="Plateia em evento" loading="lazy">
+            <figcaption>02 · plateia · cinema</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/adriano-guitar.jpg" alt="Adriano com violão" loading="lazy">
+            <figcaption>03 · música · interação</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/adriano-audience.jpg" alt="Adriano com plateia" loading="lazy">
+            <figcaption>04 · público · energia</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/audience-auditorium.jpg" alt="Auditório lotado" loading="lazy">
+            <figcaption>05 · auditório · evento</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/adriano-electric.jpg" alt="Adriano com guitarra elétrica" loading="lazy">
+            <figcaption>06 · show · guitarra</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/group-team.jpg" alt="Equipe treinada" loading="lazy">
+            <figcaption>07 · equipe · treinamento</figcaption>
+          </figure>
+          <figure class="film-frame">
+            <img src="assets/adriano-talk.jpg" alt="Adriano palestrando" loading="lazy">
+            <figcaption>08 · palestra · presença</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq">
+      <div class="container faq-grid">
+        <div class="reveal">
+          <p class="eyebrow">perguntas frequentes</p>
+          <h2>Antes de pedir orçamento.</h2>
+          <p class="muted">Se a sua dúvida não estiver aqui, é só chamar pelo WhatsApp — geralmente respondemos no mesmo dia.</p>
+        </div>
+        <div class="faq-list">
+          <details class="reveal" open>
+            <summary>Adriano atende eventos presenciais e online?</summary>
+            <p>Sim. As palestras e treinamentos são oferecidos nos dois formatos. Para experiências com música, o presencial entrega energia mais alta — vale a conversa.</p>
+          </details>
+          <details class="reveal">
+            <summary>As palestras podem ser personalizadas para minha empresa?</summary>
+            <p>Sempre. Cada apresentação é adaptada ao público, ao contexto e ao objetivo do evento — isso é parte do método.</p>
+          </details>
+          <details class="reveal">
+            <summary>Quais temas podem ser contratados?</summary>
+            <p>Atendimento, liderança, comunicação, motivação, vendas, oratória, humanização em saúde, criatividade, gestão do tempo, empregabilidade e outros temas sob demanda.</p>
+          </details>
+          <details class="reveal">
+            <summary>Qual a duração média de uma palestra?</summary>
+            <p>Geralmente entre 60 e 90 minutos. Treinamentos têm carga horária estruturada (8h a 20h) ou modular conforme a necessidade.</p>
+          </details>
+          <details class="reveal">
+            <summary>A palestra com música exige estrutura especial?</summary>
+            <p>Som de qualidade e um espaço minimamente preparado. Conversamos sobre rider técnico no orçamento.</p>
+          </details>
+          <details class="reveal">
+            <summary>Como solicitar uma proposta?</summary>
+            <p>Via WhatsApp ou e-mail. Conte data, cidade, público e objetivo do evento — você recebe uma proposta sob medida.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA — FULL LIGHT BATH ============ -->
+    <section class="final-cta" id="cta" data-act="IV">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <div class="act-marker light">
+          <span>Ato IV</span>
+          <span class="bar"></span>
+          <span>movimento</span>
+        </div>
+        <h2 class="reveal">
+          Vamos criar uma <em>experiência</em><br>
+          sob medida para sua equipe?
+        </h2>
+        <p class="reveal cta-lede">
+          Conte o objetivo do evento ou treinamento e receba uma proposta alinhada ao público,
+          ao tema e ao momento da sua organização.
+        </p>
+        <div class="reveal cta-actions">
+          <a class="btn btn-light btn-large" href="https://wa.me/5542999385910" target="_blank" rel="noreferrer">
+            <span>Falar pelo WhatsApp</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-outline-light btn-large" href="mailto:adriano.avlis@hotmail.com">
+            <span>Enviar e-mail</span>
+          </a>
+        </div>
+        <div class="reveal cta-contacts">
+          <span><em>whatsapp</em> (42) 99938-5910</span>
+          <span><em>e-mail</em> adriano.avlis@hotmail.com</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ INSTAGRAM FEED ============ -->
+  <section class="instagram-feed">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">instagram</p>
+        <h2>Acompanhe nos <em>bastidores.</em></h2>
+        <a class="insta-handle reveal" href="https://www.instagram.com/adrianosilvapalestrante/" target="_blank" rel="noreferrer">@adrianosilvapalestrante</a>
+      </div>
+
+      <!-- COLE O CÓDIGO DO BEHOLD.SO AQUI -->
+      <div class="behold-placeholder reveal">
+        <!-- 1. Acesse behold.so
+             2. Crie conta gratuita e conecte o Instagram @adrianosilvapalestrante
+             3. Configure para exibir 6 posts em grid
+             4. Copie o código gerado e substitua este bloco -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark big">AS</span>
+        <p><strong>Adriano Silva</strong><br>Palestras, treinamentos e experiências corporativas com música.</p>
+      </div>
+      <div>
+        <h4>Soluções</h4>
+        <a href="#solucoes">Palestras</a>
+        <a href="#solucoes">Treinamentos</a>
+        <a href="#solucoes">Assessoria humanização</a>
+        <a href="#solucoes">Experiências com música</a>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#autoridade">Autoridade</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="https://wa.me/5542999385910" target="_blank" rel="noreferrer">(42) 99938-5910</a>
+        <a href="mailto:adriano.avlis@hotmail.com">adriano.avlis@hotmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Adriano Silva. Todos os direitos reservados.</p>
+      <p><em>palco · conteúdo · música</em></p>
+    </div>
+  </footer>
+
+  <script src="adriano-script.js"></script>
+</body>
+</html>
