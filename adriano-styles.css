@@ -2520,36 +2520,51 @@ body[data-accent="crimson"] {
   }
 
   .hero {
-    padding: 90px 16px 64px;
-    gap: 24px;
+    padding: 80px 20px 48px;
+    gap: 16px;
+    min-height: 100svh;
+    height: auto;
   }
 
-  .hero-sub {
-    font-size: 16px;
-    margin-bottom: 28px;
+  h1 {
+    font-size: clamp(30px, 8vw, 46px);
+    line-height: 1.05;
   }
 
   .hero-title {
-    margin: 16px 0 20px;
+    margin: 12px 0 16px;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
   .hero-actions {
     flex-direction: column;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
+    gap: 10px;
   }
 
   .hero-actions .btn {
     width: 100%;
     justify-content: center;
+    padding: 14px 20px;
   }
 
   .hero-meta {
-    gap: 18px;
+    gap: 14px;
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 
   .hero-meta > div {
     flex: 1 1 40%;
+  }
+
+  .hero-meta strong {
+    font-size: 20px;
   }
 
   /* Manifesto */
@@ -2605,14 +2620,14 @@ body[data-accent="crimson"] {
 
   /* Logo marquee */
   .logo-marquee .marquee-track img {
-    width: 150px;
-    height: 56px;
-    transform: scale(1.3);
+    width: 190px;
+    height: 72px;
+    transform: scale(1.6);
   }
 
   .logo-marquee .marquee-track span {
-    min-width: 180px;
-    min-height: 72px;
+    min-width: 220px;
+    min-height: 90px;
   }
 
   /* Hero marquee logos */
