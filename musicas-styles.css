@@ -1,0 +1,213 @@
+/* ============================================================
+   ADRIANO SILVA — Estilos da página de Músicas
+   ============================================================ */
+
+/* ---- Active nav link ---- */
+.site-nav a.active {
+  color: var(--white);
+}
+.site-nav a.active::after {
+  transform: scaleX(1) !important;
+  opacity: 1 !important;
+}
+
+/* ---- Hero ---- */
+.music-page-hero {
+  padding: calc(var(--section-pad-y) + 90px) var(--gutter) var(--section-pad-y);
+  text-align: center;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.music-page-hero .eyebrow { margin-bottom: 20px; }
+.music-page-hero h1 {
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+.music-page-hero p {
+  color: var(--white-dim);
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* ---- Lista de faixas ---- */
+.tracklist-section {
+  padding: var(--section-pad-y-tight) var(--gutter) 120px;
+}
+.tracklist-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.tracklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--white-line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.track-item {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--white-line);
+  cursor: pointer;
+  transition: background 0.18s;
+  gap: 16px;
+  list-style: none;
+}
+.track-item:last-child { border-bottom: none; }
+.track-item:hover { background: rgba(255,255,255,0.04); }
+.track-item.active {
+  background: rgba(246,99,1,0.08);
+  border-left: 3px solid var(--orange);
+  padding-left: 21px;
+}
+
+.track-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--white-mute);
+  text-align: center;
+}
+.track-item.active .track-num { color: var(--orange); }
+
+.track-info { display: flex; flex-direction: column; gap: 3px; }
+.track-title { font-size: 16px; font-weight: 600; color: var(--white); }
+.track-item.active .track-title { color: var(--orange-soft); }
+.track-duration {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--white-mute);
+}
+
+.tracklist-note {
+  margin-top: 20px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--white-mute);
+  text-align: center;
+}
+
+/* ---- Player sticky ---- */
+.player-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(10,8,7,0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--white-line-strong);
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.player-bar.visible { transform: translateY(0); }
+
+.player-track-info { flex: 1; min-width: 0; }
+.player-track-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.player-track-sub {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--white-mute);
+  margin-top: 2px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.player-btn {
+  background: none;
+  border: none;
+  color: var(--white-dim);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: color 0.18s, background 0.18s;
+  line-height: 0;
+}
+.player-btn:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+.player-btn.play-pause {
+  width: 44px; height: 44px;
+  background: var(--orange);
+  color: var(--night-deeper);
+  border-radius: 50%;
+}
+.player-btn.play-pause:hover {
+  background: var(--orange-soft);
+  color: var(--night-deeper);
+}
+
+.player-progress-wrap {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.player-time {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--white-mute);
+  white-space: nowrap;
+  min-width: 36px;
+}
+.player-progress {
+  flex: 1;
+  height: 3px;
+  background: var(--white-line);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.player-progress-fill {
+  height: 100%;
+  background: var(--orange);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.25s linear;
+  pointer-events: none;
+}
+
+.player-volume {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.player-volume svg { color: var(--white-mute); }
+.player-volume input[type="range"] {
+  width: 72px;
+  height: 3px;
+  accent-color: var(--orange);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .player-bar { flex-wrap: wrap; padding: 12px 16px; gap: 10px; }
+  .player-track-info { width: 100%; order: -1; }
+  .player-progress-wrap { order: 3; width: 100%; }
+  .player-volume { display: none; }
+}

@@ -135,7 +135,7 @@
   }/*EDITMODE-END*/;
 
   const HEADLINES = {
-    presenca: `Equipes não mudam<br>com mais reunião.<br>Mudam com <em>presença,</em><br><em>conteúdo</em> e <em>música.</em>`,
+    presenca: `Equipes<br>não mudam<br>com <span class="hero-dim">mais reunião.</span><br>Mudam com<br><em>presença,</em> <em>conteúdo</em><br>e <em>música.</em>`,
     transforma: `Transforme equipes<br>com conteúdo,<br>criatividade e <em>música.</em>`,
     palco: `Quando a <em>música</em> entra,<br>a <em>mensagem</em> permanece.<br>Quando o palco acaba,<br>o <em>movimento</em> começa.`
   };

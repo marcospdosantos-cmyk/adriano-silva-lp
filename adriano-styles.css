@@ -290,6 +290,9 @@ p {
 .site-nav {
   display: flex;
   gap: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-nav a {
@@ -406,47 +409,11 @@ p {
 }
 
 .hero-sub {
-  font-size: 19px;
-  line-height: 1.55;
+  font-size: clamp(17px, 1.5vw, 21px);
+  line-height: 1.6;
   color: var(--white-dim);
-  max-width: 600px;
-  margin-bottom: 36px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-bottom: 56px;
-}
-
-.hero-meta {
-  display: flex;
-  gap: 48px;
-  padding-top: 28px;
-  border-top: 1px solid var(--white-line);
-  flex-wrap: wrap;
-}
-
-.hero-meta>div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.hero-meta strong {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.hero-meta small {
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--white-mute);
+  max-width: 620px;
+  margin-bottom: 0;
 }
 
 /* hero portrait */
@@ -2496,6 +2463,210 @@ body[data-accent="crimson"] {
   --brick: #8a1f1f;
 }
 
+/* ============ HERO DIM HIGHLIGHT ============ */
+.hero-dim {
+  color: #ffbf8f;
+}
+
+/* ============ SECTION HEAD SUB ============ */
+.section-head-sub {
+  font-size: 17px;
+  line-height: 1.65;
+  margin-top: 16px;
+  max-width: 600px;
+}
+
+/* ============ MUSIC LEDE SECOND ============ */
+.music-lede--second {
+  margin-top: 20px;
+}
+
+/* ============ FAQ LINK ============ */
+.faq-link {
+  color: var(--orange);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ============ CONTENT BLOCKS — Blog e Músicas ============ */
+.content-blocks {
+  padding: var(--section-pad-y) 0;
+  border-top: 1px solid var(--white-line);
+}
+
+.content-blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.content-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(243, 243, 241, 0.025), rgba(243, 243, 241, 0));
+  border: 1px solid var(--white-line);
+  border-radius: 6px;
+  padding: 40px 36px 36px;
+  transition: all .3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition: width .4s ease;
+}
+
+.content-card:hover {
+  border-color: var(--white-line-strong);
+  background: linear-gradient(180deg, rgba(246, 99, 1, 0.04), rgba(243, 243, 241, 0));
+  transform: translateY(-2px);
+}
+
+.content-card:hover::before {
+  width: 100%;
+}
+
+.content-card-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--orange);
+}
+
+.content-card h3 {
+  font-size: clamp(20px, 1.7vw, 26px);
+  color: var(--white);
+  margin: 0;
+  line-height: 1.15;
+}
+
+.content-card p {
+  color: var(--white-dim);
+  line-height: 1.6;
+  flex: 1;
+  font-weight: 300;
+}
+
+.content-card .btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .content-blocks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-card {
+    padding: 32px 24px;
+  }
+}
+
+/* ============ CERTIFICATES — Participantes ============ */
+.certificates {
+  padding: var(--section-pad-y) 0;
+  border-top: 1px solid var(--white-line);
+  background: linear-gradient(180deg, transparent, rgba(246, 99, 1, 0.03), transparent);
+}
+
+.cert-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--white-dim);
+  max-width: 800px;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.cert-card {
+  background: rgba(243, 243, 241, 0.02);
+  border: 1px solid var(--white-line);
+  border-radius: 6px;
+  padding: 36px 28px;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition: width .4s ease;
+}
+
+.cert-card:hover {
+  border-color: var(--white-line-strong);
+  background: rgba(246, 99, 1, 0.03);
+  transform: translateY(-2px);
+}
+
+.cert-card:hover::before {
+  width: 100%;
+}
+
+.cert-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: rgba(246, 99, 1, 0.08);
+  border: 1px solid rgba(246, 99, 1, 0.18);
+  display: grid;
+  place-items: center;
+  color: var(--orange);
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.cert-card h3 {
+  font-size: clamp(18px, 1.5vw, 22px);
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.cert-card p {
+  color: var(--white-dim);
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.cert-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 28px 20px;
+  }
+}
+
 /* ============ MOBILE — 640px ============ */
 @media (max-width: 640px) {
   :root {
@@ -2536,35 +2707,8 @@ body[data-accent="crimson"] {
   }
 
   .hero-sub {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    margin-bottom: 24px;
-    gap: 10px;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-    justify-content: center;
-    padding: 14px 20px;
-  }
-
-  .hero-meta {
-    gap: 14px;
-    flex-wrap: wrap;
-    padding-top: 20px;
-  }
-
-  .hero-meta > div {
-    flex: 1 1 40%;
-  }
-
-  .hero-meta strong {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.55;
   }
 
   /* Manifesto */
@@ -2679,5 +2823,39 @@ body[data-accent="crimson"] {
   /* Health */
   .health-results li {
     font-size: 15px;
+  }
+
+  /* Content blocks */
+  .content-card {
+    padding: 28px 20px;
+    gap: 14px;
+  }
+
+  .content-card h3 {
+    font-size: 20px;
+  }
+
+  .content-card .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Certificates */
+  .cert-intro {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .cert-card {
+    padding: 24px 18px;
+  }
+
+  .cert-card h3 {
+    font-size: 18px;
+  }
+
+  .cert-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
