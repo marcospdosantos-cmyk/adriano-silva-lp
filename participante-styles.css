@@ -1,0 +1,540 @@
+/* ============================================================
+   ADRIANO SILVA — Área do Participante
+   ============================================================ */
+
+/* ── Hero / Intro ─────────────────────────────────────────── */
+.part-hero {
+  padding: 120px var(--gutter) 64px;
+  text-align: center;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(246,99,1,.12) 0%, transparent 70%);
+  border-bottom: 1px solid var(--white-line);
+}
+
+.part-hero .eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin: 0 0 16px;
+}
+
+.part-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--white);
+  margin: 0 0 16px;
+}
+
+.part-hero h1 em {
+  font-style: italic;
+  color: var(--orange);
+  font-family: var(--font-italic);
+}
+
+.part-hero p {
+  font-size: 17px;
+  color: var(--white-dim);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Main content wrapper ────────────────────────────────── */
+.part-main {
+  padding: 64px var(--gutter) 96px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+/* ── Form card ───────────────────────────────────────────── */
+.form-card {
+  background: rgba(243, 243, 241, 0.03);
+  border: 1px solid var(--white-line);
+  border-radius: 12px;
+  padding: 48px;
+  max-width: 520px;
+  margin: 0 auto;
+  backdrop-filter: blur(6px);
+}
+
+.form-card-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 8px;
+}
+
+.form-card-sub {
+  font-size: 14px;
+  color: var(--white-mute);
+  margin: 0 0 32px;
+  line-height: 1.55;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--white-dim);
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  background: rgba(243, 243, 241, 0.05);
+  border: 1px solid var(--white-line);
+  border-radius: 8px;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 16px;
+  transition: border-color .2s, background .2s;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-group input::placeholder {
+  color: var(--white-mute);
+  font-weight: 400;
+}
+
+.form-group input:focus {
+  border-color: var(--orange);
+  background: rgba(246, 99, 1, 0.05);
+}
+
+.form-group input.error {
+  border-color: #e05;
+}
+
+.form-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--white-mute);
+  margin-top: 7px;
+  line-height: 1.5;
+}
+
+.form-hint svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  opacity: .6;
+}
+
+/* Return user auto-fill notice */
+.return-notice {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  background: rgba(246,99,1,.1);
+  border: 1px solid rgba(246,99,1,.25);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--orange);
+  margin-bottom: 24px;
+}
+
+.return-notice.visible {
+  display: flex;
+}
+
+.return-notice svg {
+  flex-shrink: 0;
+}
+
+/* Submit button */
+.btn-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 16px 24px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background .2s, transform .1s;
+}
+
+.btn-submit:hover {
+  background: var(--brick);
+}
+
+.btn-submit:active {
+  transform: scale(.98);
+}
+
+.btn-submit:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.btn-submit .spinner {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+
+.btn-submit.loading .spinner { display: block; }
+.btn-submit.loading .btn-label { opacity: .5; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Error message */
+.form-error {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  background: rgba(220, 0, 60, .1);
+  border: 1px solid rgba(220, 0, 60, .25);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #ff5577;
+  margin-top: 16px;
+}
+
+.form-error.visible {
+  display: flex;
+}
+
+.form-error svg { flex-shrink: 0; }
+
+/* ── Success section ─────────────────────────────────────── */
+#success-section {
+  display: none;
+}
+
+#success-section.visible {
+  display: block;
+}
+
+.success-welcome {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.success-welcome .eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin: 0 0 12px;
+}
+
+.success-welcome h2 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 4vw, 36px);
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 10px;
+}
+
+.success-welcome h2 strong {
+  color: var(--orange);
+}
+
+.success-welcome p {
+  font-size: 15px;
+  color: var(--white-dim);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── Certificate preview ─────────────────────────────────── */
+.cert-section {
+  margin-bottom: 48px;
+}
+
+.cert-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--white-mute);
+  margin-bottom: 20px;
+}
+
+.cert-section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--white-line);
+}
+
+.cert-preview-wrapper {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,.5), 0 4px 20px rgba(0,0,0,.3);
+  width: 100%;
+  aspect-ratio: 841.89 / 595.28;
+}
+
+.cert-preview-wrapper svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cert-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 13px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s;
+}
+
+.btn-download:hover { background: var(--brick); }
+
+.btn-download-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--white-dim);
+  border: 1px solid var(--white-line-strong);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+
+.btn-download-outline:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.cert-reaccess-note {
+  font-size: 12px;
+  color: var(--white-mute);
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── Materials section ───────────────────────────────────── */
+.materials-section {
+  margin-top: 48px;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.material-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(243, 243, 241, 0.03);
+  border: 1px solid var(--white-line);
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .2s, background .2s;
+}
+
+.material-card:hover {
+  border-color: var(--orange);
+  background: rgba(246, 99, 1, 0.05);
+}
+
+.material-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(246,99,1,.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--orange);
+}
+
+.material-info { min-width: 0; }
+
+.material-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.material-desc {
+  font-size: 12px;
+  color: var(--white-mute);
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.material-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  background: rgba(246,99,1,.15);
+  color: var(--orange);
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+.materials-empty {
+  color: var(--white-mute);
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+/* ── Back link / new registration ─────────────────────────── */
+.part-back {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--white-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.part-back a,
+.part-back button {
+  font-size: 13px;
+  color: var(--white-mute);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .2s;
+  padding: 0;
+}
+
+.part-back a:hover,
+.part-back button:hover { color: var(--orange); }
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .form-card {
+    padding: 28px 20px;
+  }
+
+  .part-hero {
+    padding: 100px 20px 48px;
+  }
+
+  .cert-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-download,
+  .btn-download-outline {
+    justify-content: center;
+  }
+}
+
+/* ── Print (certificado) ─────────────────────────────────── */
+@media print {
+  .site-header,
+  .site-nav,
+  .whatsapp-fab,
+  .grain-svg,
+  .warmth-wash,
+  .part-hero,
+  .form-card,
+  #form-section,
+  .cert-actions,
+  .cert-section-label,
+  .materials-section,
+  .cert-reaccess-note,
+  .part-back,
+  .success-welcome {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .part-main {
+    padding: 0;
+    max-width: none;
+  }
+
+  .cert-preview-wrapper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    aspect-ratio: auto;
+  }
+}

@@ -243,6 +243,12 @@ p {
   gap: 12px;
 }
 
+.brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .brand-mark {
   width: 38px;
   height: 38px;
@@ -352,6 +358,10 @@ p {
 
   .site-header {
     padding: 14px 20px;
+  }
+
+  .brand-logo {
+    height: 34px;
   }
 
   .brand-text em {

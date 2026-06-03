@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área do Participante — Adriano Silva</title>
+  <meta name="description" content="Acesse seu certificado de participação e materiais complementares das palestras e treinamentos de Adriano Silva.">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" href="assets/adriano-hero-orange.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/adriano-hero-orange.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="adriano-styles.css">
+  <link rel="stylesheet" href="participante-styles.css">
+</head>
+<body data-density="comfortable" data-anim="medium">
+
+  <!-- Film grain overlay -->
+  <svg class="grain-svg" aria-hidden="true">
+    <filter id="film-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.95   0 0 0 0 0.85   0 0 0 0.5 0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#film-grain)"/>
+  </svg>
+
+  <div class="warmth-wash" aria-hidden="true"></div>
+
+  <!-- WhatsApp FAB -->
+  <a class="whatsapp-fab" href="https://wa.me/5542999385910" target="_blank" rel="noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.45 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.88-9.88 9.88M20.46 3.49A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.33 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42"/>
+    </svg>
+  </a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">AS</span>
+      <span class="brand-text">
+        <strong>Adriano Silva</strong>
+        <em>palco · conteúdo · música</em>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#solucoes">Soluções</a>
+      <a href="temas.html">Temas</a>
+      <a href="musicas.html">Músicas</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/5542999385910" target="_blank" rel="noreferrer">
+        <span>Solicitar proposta</span>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ───────────────────────────────────────────── -->
+    <section class="part-hero">
+      <p class="eyebrow">área exclusiva</p>
+      <h1>Certificado e <em>materiais</em></h1>
+      <p>Acesse seu certificado de participação e os conteúdos complementares<br>da palestra ou treinamento que você vivenciou.</p>
+    </section>
+
+    <!-- ── Conteúdo principal ──────────────────────────────── -->
+    <div class="part-main">
+
+      <!-- FORMULÁRIO (estado inicial) -->
+      <div id="form-section">
+
+        <div class="form-card">
+          <h2 class="form-card-title">Identifique-se</h2>
+          <p class="form-card-sub">Preencha os dados abaixo e insira a palavra-chave informada por Adriano ao final da palestra para liberar o acesso.</p>
+
+          <!-- Aviso de retorno (preenchido via JS quando detectado) -->
+          <div class="return-notice" id="return-notice" role="status">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Bem-vindo de volta, <strong id="return-name"></strong>! Seu nome foi preenchido automaticamente.</span>
+          </div>
+
+          <form id="part-form" novalidate>
+
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                autocomplete="name"
+                placeholder="Seu nome como deve aparecer no certificado"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="seu@email.com"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="keyword">Palavra-chave</label>
+              <input
+                type="text"
+                id="keyword"
+                name="keyword"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="characters"
+                placeholder="Palavra informada por Adriano"
+                required
+              >
+              <p class="form-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                A palavra-chave foi compartilhada por Adriano no encerramento do evento. A busca ignora maiúsculas e minúsculas.
+              </p>
+            </div>
+
+            <!-- Mensagem de erro -->
+            <div class="form-error" id="form-error" role="alert">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+              <span id="form-error-msg"></span>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <span class="spinner" aria-hidden="true"></span>
+              <span class="btn-label">Acessar certificado e materiais</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+      <!-- /form-section -->
+
+      <!-- SUCESSO (oculto até validação) -->
+      <div id="success-section" aria-live="polite">
+
+        <!-- Boas-vindas -->
+        <div class="success-welcome">
+          <p class="eyebrow">acesso liberado</p>
+          <h2>Parabéns, <strong id="welcome-name"></strong>!</h2>
+          <p>Seu certificado de participação em <strong id="event-name" style="color:var(--white)"></strong> está pronto.</p>
+        </div>
+
+        <!-- Certificado -->
+        <div class="cert-section">
+          <p class="cert-section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Certificado de Participação
+          </p>
+
+          <div class="cert-preview-wrapper">
+            <div id="cert-svg-container"></div>
+          </div>
+
+          <div class="cert-actions">
+            <button class="btn-download" id="btn-download" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Baixar PDF
+            </button>
+            <button class="btn-download-outline" id="btn-print" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+              Imprimir
+            </button>
+          </div>
+
+          <p class="cert-reaccess-note">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            Para acessar novamente em outro momento, basta informar seu e-mail e a palavra-chave.
+          </p>
+        </div>
+
+        <!-- Materiais -->
+        <div class="materials-section">
+          <p class="cert-section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Materiais Complementares
+          </p>
+          <div class="materials-grid" id="materials-grid"></div>
+        </div>
+
+        <!-- Rodapé da seção -->
+        <div class="part-back">
+          <a href="index.html">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Voltar ao site
+          </a>
+          <button type="button" id="btn-new-reg">
+            Acessar outro certificado
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+      <!-- /success-section -->
+
+    </div>
+    <!-- /part-main -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">AS</span>
+          <span class="brand-text">
+            <strong>Adriano Silva</strong>
+            <em>palco · conteúdo · música</em>
+          </span>
+        </a>
+        <p class="footer-tagline">Palestras, treinamentos e experiências que transformam equipes.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#solucoes">Soluções</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="temas.html">Temas</a></li>
+          <li><a href="musicas.html">Músicas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5542999385910" target="_blank" rel="noreferrer">WhatsApp (42) 99938-5910</a></li>
+          <li><a href="mailto:adriano.avlis@hotmail.com">adriano.avlis@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Adriano Silva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/eventos-config.js"></script>
+  <script src="participante-script.js"></script>
+  <script src="adriano-script.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
