@@ -5,11 +5,22 @@
 
 (() => {
   const tracks = [
-    { title: 'Faixa 01', src: 'assets/music/faixa-01.mp3' },
-    { title: 'Faixa 02', src: 'assets/music/faixa-02.mp3' },
-    { title: 'Faixa 03', src: 'assets/music/faixa-03.mp3' },
-    { title: 'Faixa 04', src: 'assets/music/faixa-04.mp3' },
-    { title: 'Faixa 05', src: 'assets/music/faixa-05.mp3' },
+    { title: 'A Li',                      src: 'assets/music/a-li.mpeg' },
+    { title: 'A guerra',                  src: 'assets/music/a-guerra.mpeg' },
+    { title: 'Trilha 01',                 src: 'assets/music/trilha-01.mpeg' },
+    { title: 'Ignorância',                src: 'assets/music/ignorancia.mpeg' },
+    { title: 'Princesa do subúrbio',      src: 'assets/music/princesa-do-suburbio.mpeg' },
+    { title: 'Quem disse (V1)',           src: 'assets/music/quem-disse-v1.mpeg' },
+    { title: 'Simplesmente atenda bem',   src: 'assets/music/simplesmente-atenda-bem.mpeg' },
+    { title: 'Labirinto',                 src: 'assets/music/labirinto.mpeg' },
+    { title: 'O mesmo todo dia',          src: 'assets/music/o-mesmo-todo-dia.mpeg' },
+    { title: 'O Anjo e a Sereia',         src: 'assets/music/o-anjo-e-a-sereia.mpeg' },
+    { title: 'Leticia',                   src: 'assets/music/leticia.mpeg' },
+    { title: 'O último blues do inverno', src: 'assets/music/o-ultimo-blues-do-inverno.mpeg' },
+    { title: 'Osso duro',                 src: 'assets/music/osso-duro.mpeg' },
+    { title: 'Quem disse (V2)',           src: 'assets/music/quem-disse-v2.mpeg' },
+    { title: 'Quem disse (V3)',           src: 'assets/music/quem-disse-v3.mpeg' },
+    { title: 'Estrelas',                  src: 'assets/music/estrelas.mpeg' },
   ];
 
   const audio     = new Audio();
