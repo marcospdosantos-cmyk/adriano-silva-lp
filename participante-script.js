@@ -151,11 +151,15 @@
       return;
     }
 
+    var localData = evento.empresa
+      ? escapeXML(evento.empresa) + ' · ' + escapeXML(evento.data)
+      : escapeXML(evento.data);
+
     var filled = svgTemplate
       .replace('[NOME DO PARTICIPANTE]', escapeXML(nome))
       .replace('[NOME DA PALESTRA]',     escapeXML(evento.tema))
       .replace('[CARGA_HORARIA]',        escapeXML(evento.cargaHoraria))
-      .replace('[DATA]',                 escapeXML(evento.data));
+      .replace('[DATA]',                 localData);
 
     certContainer.innerHTML = filled;
   }
@@ -174,11 +178,15 @@
 
     var d = currentData;
 
+    var localData = d.evento.empresa
+      ? escapeXML(d.evento.empresa) + ' · ' + escapeXML(d.evento.data)
+      : escapeXML(d.evento.data);
+
     var filled = svgTemplate
       .replace('[NOME DO PARTICIPANTE]', escapeXML(d.nome))
       .replace('[NOME DA PALESTRA]',     escapeXML(d.evento.tema))
       .replace('[CARGA_HORARIA]',        escapeXML(d.evento.cargaHoraria))
-      .replace('[DATA]',                 escapeXML(d.evento.data));
+      .replace('[DATA]',                 localData);
 
     var html = [
       '<!DOCTYPE html>',
