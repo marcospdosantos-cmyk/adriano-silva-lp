@@ -5,22 +5,22 @@
 
 (() => {
   const tracks = [
-    { title: 'A Li',                      src: 'assets/music/a-li.mpeg' },
-    { title: 'A guerra',                  src: 'assets/music/a-guerra.mpeg' },
-    { title: 'Trilha 01',                 src: 'assets/music/trilha-01.mpeg' },
-    { title: 'Ignorância',                src: 'assets/music/ignorancia.mpeg' },
-    { title: 'Princesa do subúrbio',      src: 'assets/music/princesa-do-suburbio.mpeg' },
-    { title: 'Quem disse (V1)',           src: 'assets/music/quem-disse-v1.mpeg' },
-    { title: 'Simplesmente atenda bem',   src: 'assets/music/simplesmente-atenda-bem.mpeg' },
-    { title: 'Labirinto',                 src: 'assets/music/labirinto.mpeg' },
-    { title: 'O mesmo todo dia',          src: 'assets/music/o-mesmo-todo-dia.mpeg' },
-    { title: 'O Anjo e a Sereia',         src: 'assets/music/o-anjo-e-a-sereia.mpeg' },
-    { title: 'Leticia',                   src: 'assets/music/leticia.mpeg' },
-    { title: 'O último blues do inverno', src: 'assets/music/o-ultimo-blues-do-inverno.mpeg' },
-    { title: 'Osso duro',                 src: 'assets/music/osso-duro.mpeg' },
-    { title: 'Quem disse (V2)',           src: 'assets/music/quem-disse-v2.mpeg' },
-    { title: 'Quem disse (V3)',           src: 'assets/music/quem-disse-v3.mpeg' },
-    { title: 'Estrelas',                  src: 'assets/music/estrelas.mpeg' },
+    { title: 'A Li',                      src: 'assets/music/a-li.mp3' },
+    { title: 'A guerra',                  src: 'assets/music/a-guerra.mp3' },
+    { title: 'Trilha 01',                 src: 'assets/music/trilha-01.mp3' },
+    { title: 'Ignorância',                src: 'assets/music/ignorancia.mp3' },
+    { title: 'Princesa do subúrbio',      src: 'assets/music/princesa-do-suburbio.mp3' },
+    { title: 'Quem disse (V1)',           src: 'assets/music/quem-disse-v1.mp3' },
+    { title: 'Simplesmente atenda bem',   src: 'assets/music/simplesmente-atenda-bem.mp3' },
+    { title: 'Labirinto',                 src: 'assets/music/labirinto.mp3' },
+    { title: 'O mesmo todo dia',          src: 'assets/music/o-mesmo-todo-dia.mp3' },
+    { title: 'O Anjo e a Sereia',         src: 'assets/music/o-anjo-e-a-sereia.mp3' },
+    { title: 'Leticia',                   src: 'assets/music/leticia.mp3' },
+    { title: 'O último blues do inverno', src: 'assets/music/o-ultimo-blues-do-inverno.mp3' },
+    { title: 'Osso duro',                 src: 'assets/music/osso-duro.mp3' },
+    { title: 'Quem disse (V2)',           src: 'assets/music/quem-disse-v2.mp3' },
+    { title: 'Quem disse (V3)',           src: 'assets/music/quem-disse-v3.mp3' },
+    { title: 'Estrelas',                  src: 'assets/music/estrelas.mp3' },
   ];
 
   const audio     = new Audio();
