@@ -3060,3 +3060,70 @@ body[data-accent="crimson"] {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   TABLET LANDSCAPE (901–1100px)
+   Mostra hambúrguer nessa faixa onde o nav colide com o logo.
+   Regras de conteúdo (padding, grid) continuam em 900px.
+   ============================================================ */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .site-nav    { display: none; }
+  .header-cta  { display: none; }
+
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: transform 0.28s ease, opacity 0.28s ease, width 0.28s ease;
+    transform-origin: center;
+  }
+  body.menu-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  body.menu-open .nav-toggle span:nth-child(2) { opacity: 0; width: 0; }
+  body.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+    z-index: 90;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+  }
+  body.menu-open .nav-overlay { opacity: 1; pointer-events: auto; }
+
+  .nav-drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 85%;
+    max-width: 300px;
+    background: var(--night-deeper);
+    border-left: 1px solid var(--white-line-strong);
+    z-index: 95;
+    transform: translateX(100%);
+    transition: transform .32s cubic-bezier(.4,0,.2,1);
+    overflow-y: auto;
+  }
+  body.menu-open .nav-drawer { transform: translateX(0); }
+  body.menu-open { overflow: hidden; }
+}
