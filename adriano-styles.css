@@ -2235,8 +2235,9 @@ p {
 }
 
 .footer-logo {
-  height: 56px;
-  width: auto;
+  height: auto;
+  width: 260px;
+  max-width: 100%;
   display: block;
   margin-bottom: 12px;
 }
