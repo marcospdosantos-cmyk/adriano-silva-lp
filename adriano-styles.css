@@ -2303,6 +2303,19 @@ p {
   font-style: normal;
 }
 
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--white-mute);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-social:hover { color: var(--orange); }
+
 @media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
