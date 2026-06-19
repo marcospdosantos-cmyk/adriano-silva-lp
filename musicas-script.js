@@ -60,8 +60,13 @@
   function setActive(index) {
     items.forEach((item, i) => {
       item.classList.toggle('active', i === index);
-      item.querySelector('.track-num').textContent =
-        i === index ? '▶' : String(i + 1).padStart(2, '0');
+      item.classList.remove('playing');
+      const numEl = item.querySelector('.track-num');
+      if (i === index) {
+        numEl.innerHTML = '<span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>';
+      } else {
+        numEl.textContent = String(i + 1).padStart(2, '0');
+      }
     });
   }
 
@@ -77,12 +82,16 @@
     audio.play().catch(() => {});
     isPlaying = true;
     playBtn.innerHTML = svgPause();
+    playerBar.classList.add('playing');
+    items[currentIndex].classList.add('playing');
   }
 
   function pause() {
     audio.pause();
     isPlaying = false;
     playBtn.innerHTML = svgPlay();
+    playerBar.classList.remove('playing');
+    items[currentIndex].classList.remove('playing');
   }
 
   items.forEach((item, i) => {
