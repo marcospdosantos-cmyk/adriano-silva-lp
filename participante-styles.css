@@ -2,6 +2,10 @@
    ADRIANO SILVA — Área do Participante
    ============================================================ */
 
+/* FAB do WhatsApp não faz sentido nesta página (não é página de vendas)
+   e obstrui o formulário no mobile */
+.whatsapp-fab { display: none; }
+
 /* ── Hero / Intro ─────────────────────────────────────────── */
 .part-hero {
   padding: 120px var(--gutter) 64px;
