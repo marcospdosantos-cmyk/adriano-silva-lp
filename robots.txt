@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Área do participante — não indexar (página privada)
+Disallow: /participante.html
+
+Sitemap: https://adrianosilva.net/sitemap.xml
