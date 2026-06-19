@@ -386,7 +386,7 @@ p {
   margin: 0;
   align-items: center;
   overflow: hidden;
-  background-image: url('assets/hero-bg-music.jpg');
+  background-image: url('assets/hero-bg-music.webp');
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;

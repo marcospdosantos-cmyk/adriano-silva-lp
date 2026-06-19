@@ -21,7 +21,7 @@
   justify-content: center;
   padding: calc(var(--section-pad-y) + 90px) var(--gutter) 100px;
   text-align: center;
-  background: url('assets/adriano-electric.jpg') center 20% / cover no-repeat;
+  background: url('assets/adriano-electric.webp') center 20% / cover no-repeat;
   overflow: hidden;
 }
 
