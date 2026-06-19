@@ -158,6 +158,28 @@
         fill: #a17f35;
         letter-spacing: .05em;
       }
+      .st-cert-intro {
+        font-family: Poppins, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        fill: #46576c;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+      }
+      .st-cert-name {
+        font-family: Poppins, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        fill: #1a1a1a;
+        letter-spacing: .01em;
+      }
+      .st-cert-tagline {
+        font-family: Poppins, sans-serif;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        fill: #46576c;
+      }
     </style>
     <linearGradient id="Degradado_sin_nombre_122" data-name="Degradado sin nombre 122" x1="-3345.12" y1="3051.46" x2="-4092.05" y2="2304.53" gradientTransform="translate(4139.5316 -2380.3574)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
@@ -301,17 +323,18 @@
     <g>
       <text/>
       <!-- CORPO DO CERTIFICADO — campos dinâmicos substituídos por JavaScript -->
-      <text class="st13" transform="translate(39.57 197.1)">
-        <tspan x="0" y="0">Certificamos que [NOME DO PARTICIPANTE] vivenciou a experiência </tspan>
-        <tspan x="0" y="20.4">corporativa &#x201C;[NOME DA PALESTRA]&#x201D;, conduzida por Adriano Silva, em um </tspan>
-        <tspan x="0" y="40.8">encontro criado para inspirar transformação, fortalecer relações </tspan>
-        <tspan x="0" y="61.2">profissionais e despertar uma nova percepção sobre comunicação, </tspan>
-        <tspan x="0" y="81.6">liderança, propósito e performance. Este certificado simboliza mais do que </tspan>
-        <tspan x="0" y="102">uma participação: representa uma vivência de aprendizado, reflexão e </tspan>
-        <tspan x="0" y="122.4">conexão, marcada pela valorização das pessoas como ponto de partida </tspan>
-        <tspan x="0" y="142.8">para a evolução dos ambientes corporativos.</tspan>
-        <tspan class="st-info" x="0" y="166.2">Carga horária: [CARGA_HORARIA]  ·  [DATA]</tspan>
-        <tspan x="0" y="188.4">Conhecimento que inspira. Experiência que transforma.</tspan>
+      <text class="st-cert-intro" transform="translate(39.57 194)">
+        <tspan x="0" y="0">Certificamos que</tspan>
+      </text>
+      <text class="st-cert-name" transform="translate(39.57 228)">
+        <tspan x="0" y="0">[NOME DO PARTICIPANTE]</tspan>
+      </text>
+      <text class="st13" transform="translate(39.57 275)">
+        <tspan x="0" y="0">participou da experi&#xEA;ncia &#x201C;[NOME DA PALESTRA]&#x201D;,</tspan>
+        <tspan x="0" y="23">conduzida por Adriano Silva &#x2014; uma jornada de</tspan>
+        <tspan x="0" y="46">transforma&#xE7;&#xE3;o, prop&#xF3;sito e conex&#xE3;o humana.</tspan>
+        <tspan class="st-info" x="0" y="84">Carga hor&#xE1;ria: [CARGA_HORARIA]  &#xB7;  [DATA]</tspan>
+        <tspan class="st-cert-tagline" x="0" y="112">Conhecimento que inspira. Experi&#xEA;ncia que transforma.</tspan>
       </text>
       <g>
         <g>
