@@ -707,16 +707,23 @@
         <a class="insta-handle reveal" href="https://www.instagram.com/adrianosilvapalestrante/" target="_blank" rel="noreferrer">@adrianosilvapalestrante</a>
       </div>
 
-      <!-- COLE O CÓDIGO DO BEHOLD.SO AQUI -->
-      <div class="behold-placeholder reveal">
-        <!-- 1. Acesse behold.so
-             2. Crie conta gratuita e conecte o Instagram @adrianosilvapalestrante
-             3. Configure para exibir 6 posts em grid
-             4. Copie o código gerado e substitua este bloco -->
+      <!-- Feed do Instagram via Behold.so (@adrianosilvapalestrante) -->
+      <div class="insta-feed reveal">
+        <behold-widget feed-id="58FjUnR3PxCEIEW5qwO9"></behold-widget>
       </div>
 
     </div>
   </section>
+
+  <!-- Loader do widget Behold -->
+  <script>
+    (() => {
+      const d = document, s = d.createElement("script");
+      s.type = "module";
+      s.src = "https://w.behold.so/widget.js";
+      d.head.append(s);
+    })();
+  </script>
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">

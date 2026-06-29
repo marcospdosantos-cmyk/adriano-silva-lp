@@ -2143,22 +2143,8 @@ p {
   opacity: 0.7;
 }
 
-.behold-placeholder {
-  min-height: 300px;
-  border: 1px dashed var(--white-line);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white-mute);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  text-align: center;
-  padding: 40px;
-}
-
-.behold-placeholder::after {
-  content: "Aguardando código do Behold.so";
+.insta-feed {
+  min-height: 300px; /* reserva espaço enquanto o widget carrega (evita layout shift) */
 }
 
 /* ============================================ */
